@@ -1,0 +1,31 @@
+:root {
+    --main-color: #212121;
+    --blue-color: #2196f3;
+    --white-color: #ffffff;
+    --gray-color: #757575;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+  }
+  
+  .container,
+  .progects__list,
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .section {
+    padding: 94px 0;
+  }
+  .section:nth-child(3) {
+    padding-top: 0;
+  }
+  .section:nth-child(4) {
+    background: rgba(245, 244, 250, 1);
+  }
