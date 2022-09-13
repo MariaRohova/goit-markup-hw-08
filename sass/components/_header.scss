@@ -64,7 +64,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
-    margin: 32px 0;
+    gap: 54px;
   }
   
   .nav__link {
@@ -98,6 +98,7 @@
   .nav__line {
     display: flex;
     position: relative;
+
   }
   
   
@@ -107,14 +108,21 @@
     text-decoration: none;
     font-weight: bold;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     margin-left: auto;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+
+    @media screen and(min-width: $tablet){
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      gap:10px;
+      
+    }
   }
 
   .contacts__link:nth-child(1) {

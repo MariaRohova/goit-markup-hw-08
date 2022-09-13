@@ -262,7 +262,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  margin: 32px 0;
+  gap: 54px;
 }
 
 .nav__link {
@@ -302,14 +302,20 @@ body {
   text-decoration: none;
   font-weight: bold;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media screen and (min-width: 767.98px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+  }
 }
 
 .contacts__link:nth-child(1) {
@@ -330,7 +336,7 @@ body {
   width: 40px;
   height: 40px;
   border: none;
-  margin: 12px 8px;
+  padding: 12px 8px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -405,6 +411,7 @@ body {
 .work__list,
 .team__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -413,7 +420,6 @@ body {
   width: 270px;
   text-align: start;
 }
-
 .pogects__svg {
   width: 270px;
   height: 120px;
