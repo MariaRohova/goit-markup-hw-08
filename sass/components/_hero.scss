@@ -7,7 +7,11 @@
       url("../img/hero-Img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1600px;
+    max-width: 100%;
+    height: 400px;
+    @media screen and (min-width: $mobile) {
+      background-image: url("..");
+    }
   }
   
   .hero__title {

@@ -14,19 +14,19 @@
 .progects__list,
 .work__list,
 .team__list {
-  @media screen and(min-width:$tablets)  {
-    width: 354px;
+  @media screen and(min-width: $tablet)  {
+    max-width: 354px;
     height: 100%;
   }
-  @media screen and(min-width:$desctop)  {
-    width: 270px;
+  @media screen and(min-width: $desctop)  {
+    max-width: 270px;
     height: 100%;
   }
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   // margin: 0 15px;
-  width: 450px;
+  max-width: 450px;
   height: 100%;
 
 }
@@ -38,7 +38,7 @@
   text-align: start;
   margin: 0;
   padding: 0;
-  // @media screen and(max-width:$tablets)  {
+  // @media screen and(max-width:$tablet)  {
   //   width: 354px;
   //   height: 100%;
   // }
@@ -55,31 +55,33 @@
   display: flex;
   flex-direction: column;
 
-  // @media screen and(max-width:$mobile) {  
-  // width: 450px;
-  // height: 100%;}
+  @media screen and(max-width:$mobile) {  
+  width: 450px;
+  height: 100%;}
 
-  // @media screen and(max-width:$tablets)  {
-  //   width: 354px;
-  //   height: 100%;
-  // }
-  // @media screen and(max-width:$desctop)  {
-  //   width: 270px;
-  //   height: 100%;
-  // }
+  @media screen and (max-width: $tablet)  {
+    padding: 25px 190px;
+    height: 100%;
+  }
+  @media screen and(max-width: $desctop)  {
+    width: 270px;
+    height: 100%;
+  }
 }
 
 
 .pogects__subtitle {
-  @media screen and (max-weidth:$mobile) {
-    text-align: center;
-  }
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: start;
+  @media screen and(max-width: $tablet) {
+    text-align: center;
+  }
 }
+
 
 .pogects__desc {
   font-size: 14px;
