@@ -18,17 +18,7 @@
                 <div class="header__logo--mobile logo">
                     <a href="./index.html">Web<span class="logo--black">Studio</span> </a>
                 </div>
-                <button class="header__btn menu-btn js-open-menu">
-                    <svg width="24" height="16" aria-label="open menu">
-                        <use class="menu-btn__menu active" href="./img/symbol-defs.svg#icon-menu_24px"></use>
-                        <use class="menu-btn__close" href="./img/symbol-defs.svg#icon-close_24px"></use>
-                    </svg>
-                </button>
-                <!-- <button class="header__btn--close menu-btn js-close-menu">
-                    <svg width="19" height="19" aria-label="close-menu">
 
-                    </svg>
-                </button> -->
 
                 <div class="header__nav--inner mobile-menu js-menu-container">
 
@@ -68,6 +58,12 @@
 
                     </div>
                 </div>
+                <button class="header__btn menu-btn js-open-menu">
+                    <svg width="24" height="16" aria-label="open menu">
+                        <use class="menu-btn__menu active" href="./img/symbol-defs.svg#icon-menu_24px"></use>
+                        <use class="menu-btn__close" href="./img/symbol-defs.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
             </div>
 
             <div class="header__inner">
@@ -240,12 +236,13 @@
                 <ul class="team__list">
                     <li class="team__item">
                         <picture>
-                            <source srccet="./goit-markup-hw-01/images/img.jpg 1x, ./img/Team/img2x-team-1 (1).jpg 2x " 
-                            media="(min-width:1200px)" />
-                            <source srccet="./img/Team/img1x-tablet-team-1 (1).jpg 1x, ./img/Team/img2x-tablet-team-1 (1).jpg 2x" 
-                            media="min-width:768px" />
-                            <img class="team__img" src="./goit-markup-hw-01/images/img.jpg" alt="Ігор Дем'яненко"
-                                width="270">
+                            <source srcset="./img/team/1x-mobile-1.jpg 1x, ./img/team/2x-mobile-1.jpg 2x" 
+                            media="(max-width:767px)"/>
+                            <source srcset="./img/team/1x-tablet-1.jpg 1x, ./img/team/2x-tablet-1.jpg 2x" 
+                            media="(max-width:1199px)"/>
+                            <source srcset="./img/team/1x-dec-1.jpg 1x, ./img/team/2x-dec-1.jpg 2x" 
+                            media="(min-width:1200px)"/>
+                            <img class="team__img" src="./img/team/1x-mobile-1.jpg" alt="Ігор Дем'яненко">
                         </picture>
 
                         <div class="team__img--text">
