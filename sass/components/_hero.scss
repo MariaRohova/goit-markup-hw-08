@@ -1,7 +1,7 @@
 .hero {
   max-width: 100%;
   height: 400px;
-    // padding: 200px 0;
+   
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -9,6 +9,7 @@
       url("/img/mobile-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 118px;
 
 
     @media screen and (min-width: $mobile) {
@@ -25,6 +26,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../img/hero-Img.jpg");
+       padding-top: 200px;
       // max-width: 100%;
       // height: 600px;
 
@@ -40,7 +42,7 @@
     color: var(--white-color);
     width: 100%;
     margin: 0 auto;
-    padding-top: 118px;
+    // padding-top: 118px;
 
     @media screen and(min-width:$desctop) {
       font-size: 44px;

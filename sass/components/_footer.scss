@@ -52,8 +52,6 @@
   }
 }
 
-
-
   .footer .logo--white {
     color: var(--white-color);
   }
@@ -70,17 +68,21 @@
       
     }
   }
+
   
   .address__map{
   color: var(--white-color);
   }
 
 
-  .contact__item:not(:last-child){
-    margin-bottom: 9px;
-
-  }
+//  .contact__list{
+//     display:flexbox;
+//   }
   
+// .contact__item:not(:last-child){
+//   margin-bottom: 9px;
+//   }
+
   
   .footer__join {
     font-weight: 700;
