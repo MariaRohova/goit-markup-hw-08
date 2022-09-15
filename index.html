@@ -17,7 +17,7 @@
             <a href="./index.html">Web<span class="logo--black">Studio</span> </a>
         </div>
         <button class="header__btn menu-btn">
-            <svg width="24" height="19" aria-label="open menu">
+            <svg width="19" height="19" aria-label="open menu">
                 <use class="menu-btn__menu" href="./img/symbol-defs.svg#icon-menu_open"></use>
                 <use class="menu-btn__close" href="./img/symbol-defs.svg#iicon-close_menu"></use>
             </svg>
@@ -145,12 +145,12 @@
 
 
 <section class="section progects">
-
+    <div class="container">
     <h2 class="progects__title"> Проекти WebStudio</h2>
     <ul class="progects__list">
         <li class="progects__item">
 
-            <a href="" class="pogects__svg" href="#">
+            <a  class="pogects__svg" href="#">
                 <svg class="icon" width="70" height="70">
                     <use href="./img/symbol-defs.svg#icon-antenna-1-1"></use>
                 </svg>
@@ -192,10 +192,11 @@
             <p class="pogects__desc">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
         </li>
     </ul>
+</div>
 </section>
 
 
-<!-- <section class="section work">
+<section class="section work">
     <h2 class="work__title">Чим ми займаємося</h2>
     <div class="container">
         <ul class="work__list">
@@ -210,15 +211,22 @@
             </li>
         </ul>
     </div>
-</section> -->
+</section>
 
-<!-- 
+ 
 <section class="section team">
     <div class="container">
     <h2 class="team__title">Наша команда</h2>
     <ul class="team__list">
         <li class="team__item"> 
-            <img  class="team__img" src="./goit-markup-hw-01/images/img.jpg" alt="Ігор Дем'яненко" width="270">
+            <picture>
+                <source srcset="./" 
+                media="(min-width:1200px)"/>
+                <source srcset="" 
+                media="min-width:480px"/>
+                <img  class="team__img" src="./goit-markup-hw-01/images/img.jpg" alt="Ігор Дем'яненко" width="270">
+            </picture>
+
             <div class="team__img--text">
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__desc">Product Designer</p>
@@ -255,6 +263,12 @@
         </div>
         </li>
         <li class="team__item">
+            <picture>
+                <source srcset="" 
+                media="(min-width:1200px)"/>
+                <source srcset="" 
+                media="min-width:480px"/>
+            </picture>
             <img class="team__img" src="./goit-markup-hw-01/images/img (1).jpg" alt="Ольга Рєпіна" width="270">
             <div class="team__img--text">
             <h3 class="team__name">Ольга Рєпіна</h3>
@@ -292,6 +306,12 @@
             </div>
         </li >
         <li class="team__item" >
+            <picture>
+                <source srcset="" 
+                media="(min-width:1200px)"/>
+                <source srcset="" 
+                media="min-width:480px"/>
+            </picture>
             <img class="team__img" src="./goit-markup-hw-01/images/img (2).jpg" alt="Микола Тарасов" width="270">
             <div class="team__img--text">
             <h3 class="team__name">Микола Тарасов</h3>
@@ -329,6 +349,12 @@
             </div>
         </li>
         <li class="team__item">
+            <picture>
+                <source srcset="" 
+                media="(min-width:1200px)"/>
+                <source srcset="" 
+                media="min-width:480px"/>
+            </picture>
             <img class="team__img" src="./goit-markup-hw-01/images/img (3).jpg" alt="Михайло Єрмаков" width="270">
             <div class="team__img--text">
             <h3 class="team__name">Михайло Єрмаков</h3>
@@ -367,17 +393,11 @@
         </li>
     </ul>
     </div>
-</section> -->
+</section>
 
 
 
-
-
-
-<!-- 
-
-
-    <section class="section clients">
+<section class="section clients">
 
         <h2 class="clients__title ">Постійні клієнти</h2>
         <div class="container">
@@ -426,7 +446,8 @@
             </li>
         </ul>
         </div>
-    </section>
+    </section> 
+
 
 
 </main>
@@ -495,6 +516,8 @@
             </div>  
         </div>
     </footer>
+
+
     <div class="container">
         <div class=" backdrop is-hidden" data-modal>
             <div class="modal">
@@ -502,7 +525,7 @@
                     <svg class="button__close" widht="18" height="18">
                         <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
                     </svg>
-                </button> -->
+                </button>
 
 <!-- 
                 <form class="modal__form">

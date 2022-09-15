@@ -6,10 +6,11 @@
     letter-spacing: 0.03em;
     color: #212121;
     text-align: center;
+
+
   }
   
-  .container,
-  .progects__list,
+    .progects__list,
   .hero {
     max-width: 1200px;
     margin: 0 auto;
@@ -18,28 +19,43 @@
       
     // }
   }
+  .container{
+
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and(min-width: $tablet)  {
+    max-width: 768px;
+   
+  }
+  @media screen and(min-width: $desctop)  {
+    max-width: 1200px;
+  
+  }
+}
+
+  // .section {
+  //   max-width: 480px;
+  //   margin: 0 auto;
+  //   padding: 0 15px;
+    
+  //     @media screen and(min-width: $tablet)  {
+  //       max-width: 768px;
+  //     }
+  //     @media screen and(min-width: $desctop)  {
+  //       max-width: 1200px;
+  //     }
+  //   }
 
   .section {
-    width: 480px;
-    height: 100px;
-
-    @media screen and(min-width: $tablets)  {
-      width: 768px;
-      height: 100%;
+    padding: 60px 0; 
+    @media screen and(min-width:$desctop) {
+      padding: 94px 0; 
     }
-    @media screen and(min-width: $desctop)  {
-      width: 1200px;
-      height: 100%;
-    }
+    
   }
 
-
-  .section {
-    padding: 94px 0;
-  }
-  .section:nth-child(3) {
-    padding-top: 0;
-  }
   .section:nth-child(4) {
     background: rgba(245, 244, 250, 1);
   }
